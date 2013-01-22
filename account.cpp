@@ -13,8 +13,8 @@ int main(int argc, char *argv[])
 
 	//For MPI
     MPI_Status status;
-	int pid;	
-	int TAG = 0;
+    int pid;	
+    int TAG = 0;
     int threads = 0;
 
     // for account:
@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
     const int MAX_MONEY = 50;
 
     //Enter the MPI:
-	MPI_Init( &argc, &argv );
+    MPI_Init( &argc, &argv );
     MPI_Comm_size(MPI_COMM_WORLD, &threads);
 	MPI_Comm_rank( MPI_COMM_WORLD, &pid);
 	if ( pid != 0){
