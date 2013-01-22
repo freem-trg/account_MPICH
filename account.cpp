@@ -9,8 +9,6 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {	
-
-
 	//For MPI
     MPI_Status status;
     int pid;	
